@@ -84,6 +84,21 @@ body a:hover {
     background-position: center;
 }
 
+#img4 {
+    background-image: url("/images/number.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#img5 {
+    background-image: url("/images/number.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
 /*/////////////Possibilities-section//////////////*/
 .pos-card .card-title {
     font-weight: 400;
