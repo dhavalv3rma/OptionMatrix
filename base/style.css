@@ -1,6 +1,7 @@
 html,
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 body a,
@@ -23,18 +24,18 @@ body p {
     box-shadow: none !important;
 }
 
+
 #brand {
     height: 34px;
 }
 
 .dropdown-menu {
-    max-width: 100px;
-    border-bottom: solid 1px #707070;
+    border: solid 1px #dddddd;
 }
 
 .dropdown-item:hover {
     color: #ffffff !important;
-    background: #444444;
+    background: #23374D;
     border: #707070;
 }
 
@@ -435,6 +436,10 @@ ul {
     width: 50px;
 }
 
+footer li a:hover {
+    color: #FF3547 !important;
+}
+
 #in-btn:hover {
     background: #2867b2;
     color: #ffffff;
@@ -457,7 +462,6 @@ ul {
 
 
 .seperator {
-
     border: 0 4px 0 0 solid;
     margin: 0 20px 0 20px;
     background: #DC3545;
