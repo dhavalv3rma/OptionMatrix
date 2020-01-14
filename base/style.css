@@ -365,7 +365,6 @@ body p {
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
     font-size: 13px;
-
 }
 
 .client-img img {
@@ -391,9 +390,6 @@ body p {
     background: #F4F5F8;
 }
 
-#countries ul li {
-    display: inline-block;
-}
 
 /*///////////////////////////FOOTER///////////////////////////*/
 #banner-dark,
@@ -527,25 +523,15 @@ footer li a:hover {
         font-size: 3rem;
     }
 
-
-
-    #head_section {
-        height: 400px;
-    }
+    #banner-dark2 .cards-deck
 }
 
 
 /*Laptops/screens- 600px and above*/
 @media only screen and (min-width: 768px) {
 
-
-
     .display-4 {
         font-size: 3.5rem;
-    }
-
-    #head_section {
-        height: 500px;
     }
 
 
@@ -556,7 +542,12 @@ footer li a:hover {
 /*large screens- 600px and above*/
 @media only screen and (min-width: 1367px) {
     #head_section {
-        height: 680px;
+        height: 580px;
+    }
+
+    #head-text {
+        padding-right: 60px;
+        margin-left: 0px;
     }
 
 }

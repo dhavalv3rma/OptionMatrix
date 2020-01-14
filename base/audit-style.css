@@ -242,40 +242,10 @@ footer a,
     }
 
 
-    .accordion {
-        height: auto;
-    }
-
-    .accordion ul li,
-    .accordion ul li:hover,
-    .accordion ul:hover li,
-    .accordion ul:hover li:hover {
-        position: relative;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        -webkit-transition: none;
-        transition: none;
-    }
-
-    #number-section h1 {
-        font-size: 1.75rem;
-    }
-
-    #number-section h2 {
-        font-size: 1.5rem;
-    }
-
-
-    #brand-footer {
+       #brand-footer {
         justify-content: center;
     }
 
-    #quote {
-        border-top: 1px solid red;
-        padding-top: 5px;
-        margin-left: 50px;
-    }
 }
 
 /*Tablets- 600px and above*/

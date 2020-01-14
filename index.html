@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="base/mdb.min.css">
     <link rel="stylesheet" href="base/style.css">
+    <link rel="stylesheet" href="base/grid-accordion.min.css">
     <title>Digital Disruption</title>
 </head>
 
@@ -73,14 +74,14 @@
     </nav>
 
     <!--Head section-->
-    <header class="container" id="head_section">
+    <header class="container text-center" id="head_section">
         <div class="row h-100">
             <!--sm-screens-->
             <div class="col-sm-12 d-block d-md-none p-5 my-5" id="sm-img">
                 <img src="images/slide.png" alt="">
             </div>
 
-            <div class="col-md-6 col-sm-12 my-auto pl-0 pr-5 pt-5">
+            <div class="col-md-6 col-sm-12 my-auto pt-5" id="head-text">
                 <div class="text-md-left">
                     <h1 class="mb-3">Quality is everything, Everything is People.</h1>
                     <p class="h5-responsive">We have served more than 100+ business leaders through 210+ engagements in 9 countries & our core strength is business requirement translation and Initiutive User Experience. </p>
@@ -170,137 +171,97 @@
             </ul>
         </div>
 
-
-        <!--background-CARD STYLES
-<div class="card-deck row my-5 text-center domain-card">
-    <div class="card p-4 my-4 one">
-        <div class="mt-2">
-            <h3>Construction</h3>
-            <hr style="border-top: 1px solid #8b8b8b;width: 50%">
-            <p>The team has extensive experience in creating custom frameworks for field to office reporting, safety audits, safety.</p>
-        </div>
-        <hr>
-        <button class="btn btn-success mb-1">Explore</button>
-    </div>
-    <div class="card p-4 my-4 two">
-        <div class="mt-2">
-            <h3>Mining</h3>
-            <hr style="border-top: 1px solid #8b8b8b;width: 50%">
-            <p>We specialize in building purchase and store module, fleet management, capital finance, safety audits, store management.</p>
-        </div>
-        <hr>
-        <button class="btn btn-success mb-1">Explore</button>
-    </div>
-    <div class="card p-4 my-4 four">
-        <div class="mt-2">
-            <h3>Manufacturing</h3>
-            <hr style="border-top: 1px solid #8b8b8b;width: 50%">
-            <p>Our wide range of exprience in the this industry are on various audits, store management, quality process and many more..</p>
-        </div>
-        <hr>
-        <button class="btn btn-success mb-1">Explore</button>
-    </div>
-    <div class="card p-4 my-4 five">
-        <div class="mt-2">
-            <h3>Diagnostics</h3>
-            <hr style="border-top: 1px solid #8b8b8b;width: 50%">
-            <p>We cover everything from Clinical scheduling frameworks to Custom Audit automations for the Pharmaceutical industry. </p>
-        </div>
-        <hr>
-        <button class="btn btn-success mb-1">Explore</button>
-    </div>
-</div>-->
-
         <!--card alternate-->
-        <div class="card-deck row text-center mt-5">
-            <div class="card">
-                <div class="view view-cascade overlay">
-                    <img class="card-img-top" src="images/construction.jpg" height="180px;" alt="Card image cap">
-                    <div class="mask rgba-white-slight"></div>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title"><strong>Construction</strong></h4>
-                    <p class="card-text">The team has extensive experience in creating custom frameworks for field to office reporting and safety audits.</p>
+        <div class="d-none d-md-block">
+            <div class="card-deck text-center mt-5 pt-4 ">
+                <div class="card">
+                    <div class=" card-img view view-cascade overlay">
+                        <img class="card-img-top" src="images/construction.jpg" height="180px;" alt="Card image cap">
+                        <div class="mask rgba-white-slight"></div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Construction</strong></h4>
+                        <p class="card-text">The team has extensive experience in creating custom frameworks for field to office reporting and safety audits.</p>
 
-                    <a href="/construction.html"><button class=" btn btn-primary mt-3">Explore</button></a>
+                        <a href="/construction.html"><button class=" btn btn-primary mt-3">Explore</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="view view-cascade overlay">
-                    <img class="card-img-top" src="images/mining.jpg" height="180px;" alt="Card image cap">
-                    <div class="mask rgba-white-slight"></div>
+                <div class="card">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="images/mining.jpg" height="180px;" alt="Card image cap">
+                        <div class="mask rgba-white-slight"></div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Mining</strong></h4>
+                        <p class="card-text">We specialize in building purchase, fleet management, capital finance, safety audits and many more...</p>
+                        <a href="/mining.html"><button class=" btn btn-primary mt-3">Explore</button></a>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h4 class="card-title"><strong>Mining</strong></h4>
-                    <p class="card-text">We specialize in building purchase, fleet management, capital finance, safety audits and many more...</p>
-                    <a href="/mining.html"><button class=" btn btn-primary mt-3">Explore</button></a>
+                <div class="card">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="images/manufacture.jpg" height="180px;" alt="Card image cap">
+                        <div class="mask rgba-white-slight"></div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Manufacturing</strong></h4>
+                        <p class="card-text">Our wide range of exprience in the this industry are on various audits, store management and many more..</p>
+                        <a href="/manufacturing.html"><button class=" btn btn-primary mt-3">Explore</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="view view-cascade overlay">
-                    <img class="card-img-top" src="images/manufacture.jpg" height="180px;" alt="Card image cap">
-                    <div class="mask rgba-white-slight"></div>
+                <div class="card">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="images/medical-563427_1920.jpg" height="180px;" alt="Card image cap">
+                        <div class="mask rgba-white-slight"></div>
+                    </div>
+                    <div class="card-body card-body-cascade text-center pb-0">
+                        <h4 class="card-title"><strong>Logistics</strong></h4>
+                        <p class="card-text">We cover everything from Clinical scheduling frameworks to audits and automations for Diagnostics industry.</p>
+                        <a href=""><button class=" btn btn-primary mt-3">Explore</button></a>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h4 class="card-title"><strong>Manufacturing</strong></h4>
-                    <p class="card-text">Our wide range of exprience in the this industry are on various audits, store management and many more..</p>
-                    <a href="/manufacturing.html"><button class=" btn btn-primary mt-3">Explore</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="view overlay">
-                    <img class="card-img-top" src="images/medical-563427_1920.jpg" height="180px;" alt="Card image cap">
-                    <div class="mask rgba-white-slight"></div>
-                </div>
-                <div class="card-body card-body-cascade text-center pb-0">
-                    <h4 class="card-title"><strong>Logistics</strong></h4>
-                    <p class="card-text">We cover everything from Clinical scheduling frameworks to audits and automations for Diagnostics industry.</p>
-                    <a href=""><button class=" btn btn-primary mt-3">Explore</button></a>
-                </div>
-            </div>
 
+            </div>
         </div>
-
-
-
-
-
-
-
-
 
 
         <!--for sm screens-->
-        <!--<div class="card-deck d-block d-md-none mt-5 domain-card">
+        <div class="card-deck d-block d-md-none d-lg-none mt-5 domain-card">
             <div class="card p-4 my-4 one">
-                <h4>Construction</h4>
+                <h4 class="text-center text-white">Construction</h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p>The team has extensive experience in creating custom frameworks for field to office reporting and safety audits.</p>
             </div>
             <div class="card p-4 my-4 two">
-                <h4>Mining</h4>
+                <h4 class="text-center text-white">Mining</h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p>We specialize in building purchase and store module, fleet management, account payables, capital finance, safety audits, store management.</p>
             </div>
             <div class="card p-4 my-4 three">
-                <h4>Infrastructure</h4>
+                <h4 class="text-center text-white">Infrastructure</h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p> Our team has expertise in purchase & stores, inventory management, maintenance management of heavy equipment & vehicles, project estimation, field safety audits and field to office reporting. </p>
             </div>
-            <div class="card p-4 my-4 four">
-                <h4>Manufacturing</h4>
+            <div class="card p-4 my-4 four text-white">
+                <h4 class="text-center text-white"><b>Manufacturing</b></h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p>Our wide range of exprience working in the manufacturing industry are on safety audit, purchase, store management, quality process, process audit, report syndication, production planning, sales force automation, service connect, warehouse module to name a few.</p>
             </div>
             <div class="card p-4 my-4 five">
-                <h4>Healthcare</h4>
+                <h4 class="text-center text-white">Healthcare</h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p>We cover everything from Clinical scheduling frameworks to Custom Audit automations for the Pharmaceutical industry. The team is constantly working on new ideas</p>
             </div>
             <div class="card p-4 my-4 six">
-                <h4>Real Estate</h4>
+                <h4 class="text-center text-white">Real Estate</h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p>A dynamic industry with a equally complicated sales process, our in house experts and research specialists have put together a software made to be tailored to any sales need one might have.</p>
             </div>
             <div class="card p-4 my-4 seven">
-                <h4>Hospitality</h4>
+                <h4 class="text-center text-white">Hospitality</h4>
+                <div class="clearfix bg-danger mb-3"></div>
                 <p>From Audit automation to online food ordering services, we have it covered and the team is focused on further expanding this field.</p>
             </div>
-        </div>-->
+        </div>
 
 
         <p class="h5-responsive text-center pt-5">Global experience enables us to contribute best practices in solution design where we combine our insights with client business needs. Nearly 50% of our revenue comes from projects in USA. India accounts for about 20% of our project activities. </p>
@@ -486,39 +447,39 @@
                 <h2 class="text-center mb-5"><b>Testimonials</b>
                     <div class="clearfix2 bg-danger mb-3" style="width: 120px"></div>
                 </h2>
-                <div class="cards-deck d-flex justify-content-around pt-5 " id="set-one">
-                    <div class="card col-3 text-muted p-4">
+                <div class="card-deck justify-content-around pt-5 " id="set-one">
+                    <div class="card text-muted p-4">
                         <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
                             <img src="images/quote.svg" style="height: 20px;" alt="quote">
                         </div>
                         <div class="my-3 client-img">
                             <img class="rounded-circle" src="images/Jennie-Thumbnail.png" alt="">
                         </div>
-                        <p>We have been working with Option Matrix for over a year now, we have been incredibly happy with the product they deliver to us and the communication we have...</p>
+                        <p class="m-3">We have been working with Option Matrix for over a year now, we have been incredibly happy with the product they deliver to us and the communication we have...</p>
                         <hr>
                         <h5><b class="text-dark">Jennie Ross</b></h5>
                         <p>MLS Delivery, Texas, USA</p>
                     </div>
-                    <div class="card col-3 p-4 bg-dark  " style="border: 1px solid #444444">
+                    <div class="card col-sm-9  p-4 bg-dark" style="border: 1px solid #444444">
                         <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
                             <img src="images/quote.svg" style="height: 20px;" alt="quote">
                         </div>
                         <div class="my-3 client-img">
                             <img class="rounded-circle" src="images/paul-thumbnail.png" alt="">
                         </div>
-                        <p class="text-light">Interview is the first step for selection of a candidate and for this we have an automated system which records calls, produces reports and shortlists candidates.</p>
+                        <p class="text-light m-3">Interview is the first step for selection of a candidate and for this we have an automated system which records calls, produces reports and shortlists candidates.</p>
                         <hr style="border-top: 1px solid #343434 ">
                         <h5><b class="text-light">Paul Bailo</b></h5>
                         <p class="text-light">Phone Interview Pro, USA</p>
                     </div>
-                    <div class="card col-3 text-muted p-4">
+                    <div class="card  text-muted p-4">
                         <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
                             <img src="images/quote.svg" style="height: 20px;" alt="quote">
                         </div>
                         <div class="my-3 client-img">
                             <img class="rounded-circle" src="images/venu-thumbnail.png" alt="">
                         </div>
-                        <p>Managing 10+ operational sites for procurement activities was a difficult and challenging job for us. Reviewing P/L statements, monthly prediction of Expenditure...</p>
+                        <p class="m-3">Managing 10+ operational sites for procurement activities was a difficult and challenging job for us. Reviewing P/L statements, monthly prediction of Expenditure</p>
                         <hr>
                         <h5><b class="text-dark">Venu Gopal Reddy</b></h5>
                         <p>Head Office Manager, India</p>
@@ -536,7 +497,7 @@
             <h1 class="mb-4">Our Processes Are Aligned To SEI CMMI Level 4</h1>
             <p>Our everyday work practices are driven by zero defect tolerance and strict engineering standards. We emphasize cyber security through dual penetration testing. </p>
         </div>
-        <div class="col-12"><img src="images/arrowdn.png" alt=""></div>
+        <div class="col-12 d-none d-md-block mb-3"><img src="images/arrowdn.png" alt=""></div>
         <div id="process">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -565,9 +526,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6"><img src="images/arrowup.png" alt=""></div>
-            <div class="col-6"><img src="images/arrowup.png" alt=""></div>
+        <div class="row  ">
+            <div class="col-6 d-none d-md-block"><img src="images/arrowup.png" alt=""></div>
+            <div class="col-6 d-none d-md-block"><img src="images/arrowup.png" alt=""></div>
         </div>
     </section>
 
@@ -583,10 +544,95 @@
                 <h2><b>Global Outreach</b></h2>
                 <hr>
                 <p class="h4-responsive">We have served more than 100 clients across 210+ engagements in over 9 countries across the globe. India accounts for about 20% of our activities.</p>
-                <hr>
-                <div class="mt-4 h4-responsive">Australia | Canada | India | USA | UK | Denmark | Japan | Indonesia | UAE</div>
             </div>
-            <div class="col-6" id="global"></div>
+            <div class="col-6 d-none d-md-block">
+                <div id="my-accordion" class="grid-accordion ">
+                    <div class="ga-panels text-center">
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/aus.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                Australia
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                Financial Analysis dashboard, ABC Costing, Order Processing Automation
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/can.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                Canada
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                E-commerce, Field to Office collaboration, Process Audit Automation, Driver Recruiting
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/india.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                India
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                Material Management & Fleet Financing for Mining, Process Audit Automation for Hospitality
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/usa.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                America
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                Medical Diagnostic Scheduling, Health Insurance Reporting, Recruitment Automation
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/uk.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                United Kingdom
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                Sales Force Automation, E-commerce, Field to Office Reporting, Field Safety Audits
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/denmark.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                Denmark
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                Workflow Automation, Content Management, E-Commerce, CEO Dashboards
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/japan.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                Japan
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                B2B Sales Process Automation, Workflow Automation, Supplier Connect, Dealer Connect
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/indo.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                Indonesia
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                Balanced Scorecard automation, CEO Agenda, Workflow Automation
+                            </p>
+                        </div>
+                        <div class="ga-panel">
+                            <img class="ga-background" src="images/uae.jpg" />
+                            <h3 class="ga-layer ga-black ga-padding">
+                                UAE
+                            </h3>
+                            <p class="ga-layer ga-opened ga-black ga-padding" data-width="100%" data-horizontal="center" data-vertical="70%">
+                                E-Commerce, Workflow Automation, Field to Office Reporting
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-none d-xs-block" id="global"></div>
         </div>
     </section>
 
@@ -646,7 +692,7 @@
                         <div class="text-center">
                             <li class="mb-1"><a href="">Profile</a></li>
                             <li class="mb-1"><a href="">Culture</a></li>
-                            <li class="mb-1"><a href="">Technologies</a></li>
+                            <li class="mb-1"><a href="/technologies.html">Technologies</a></li>
                             <li class="mb-1"><a href="https://www.behance.net/optionmatrix" target="_blank">UX Portfolio</a></li>
                             <li><a href="/contact.html">Contact Us</a></li>
                         </div>
@@ -679,9 +725,32 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="base/mdb.min.js"></script>
+    <script src="base/jquery.gridAccordion.min.js"></script>
 
     <!-- Optional JavaScript -->
     <script>
+        /*accordion-grid*/
+        jQuery(document).ready(function($) {
+            $('#my-accordion').gridAccordion();
+        });
+
+        $('#my-accordion').gridAccordion({
+            width: 700,
+            height: 600,
+            columns: 3,
+            rows: 3,
+            autoplay: false,
+            mouseWheel: false,
+            responsivemode: 'auto',
+            openPanelDuration: 500,
+            closePanelDuration: 300,
+            mouseDelay: 0,
+        });
+
+
+
+
+        /*footer date*/
         $('#date').text(new Date().getFullYear());
 
         /*number-section*/
