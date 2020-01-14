@@ -43,14 +43,6 @@ body a:hover {
 
 /*/////////Features-SECTION/////////*/
 
-#features .list-group-flush li {
-    border: 0px !important;
-    padding: 12px;
-}
-
-#features ul li:nth-child(2) {
-    margin: 10px 0px 10px 0px;
-}
 
 
 .domain-card .card-title {
@@ -79,9 +71,7 @@ body a:hover {
 
 
 /*////////////////////////frame-sol section////////////////////////*/
-.frame-img {
-    height: 460px;
-}
+
 
 #img1 {
     background-image: url("/images/f2o.jpg");
@@ -198,46 +188,17 @@ footer a,
 /*Phones- 600px and low*/
 @media only screen and (max-width: 600px) {
 
-
-
     .display-4 {
         font-size: 2.5rem;
     }
 
-
-    .accordion {
-        height: auto;
+    .frame-img {
+        height: 160px;
     }
 
-    .accordion ul li,
-    .accordion ul li:hover,
-    .accordion ul:hover li,
-    .accordion ul:hover li:hover {
-        position: relative;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        -webkit-transition: none;
-        transition: none;
-    }
-
-    #number-section h1 {
-        font-size: 1.75rem;
-    }
-
-    #number-section h2 {
-        font-size: 1.5rem;
-    }
-
-
-    #brand-footer {
-        justify-content: center;
-    }
-
-    #quote {
-        border-top: 1px solid red;
-        padding-top: 5px;
-        margin-left: 50px;
+    #global-text {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -246,6 +207,19 @@ footer a,
 
     .display-4 {
         font-size: 3rem;
+    }
+
+    .frame-img {
+        height: 460px;
+    }
+
+    #features .list-group-flush li {
+        border: 0px !important;
+        padding: 12px;
+    }
+
+    #features ul li:nth-child(2) {
+        margin: 10px 0px 10px 0px;
     }
 
 }

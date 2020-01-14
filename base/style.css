@@ -379,7 +379,7 @@ body p {
 /*////////////////////////Map section////////////////////////*/
 
 #global {
-    height: 400px;
+    width: 100%;
     background-image: url("/images/globe.png");
     background-size: cover;
     background-position: center;
@@ -523,7 +523,8 @@ footer li a:hover {
         font-size: 3rem;
     }
 
-    #banner-dark2 .cards-deck
+
+
 }
 
 
@@ -534,7 +535,9 @@ footer li a:hover {
         font-size: 3.5rem;
     }
 
-
+    #head_section {
+        height: 580px;
+    }
 
 }
 
@@ -545,9 +548,5 @@ footer li a:hover {
         height: 580px;
     }
 
-    #head-text {
-        padding-right: 60px;
-        margin-left: 0px;
-    }
 
 }
