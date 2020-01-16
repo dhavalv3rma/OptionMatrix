@@ -234,13 +234,13 @@ footer a,
 /*Phones- 600px and low*/
 @media only screen and (max-width: 600px) {
 
-    .display-4 {
-        font-size: 2.5rem;
+       header img {
+        height: 50px;
     }
 
     .frame-img {
         height: 160px;
-        background-size: cover;
+        background-size: contain;
     }
 
     #global-text {
@@ -250,7 +250,6 @@ footer a,
 
     #process img {
         height: 80px;
-
     }
 }
 

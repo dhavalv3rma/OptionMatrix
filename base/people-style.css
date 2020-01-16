@@ -187,46 +187,22 @@ footer a,
 /*Phones- 600px and low*/
 @media only screen and (max-width: 600px) {
 
-
-
-    .display-4 {
-        font-size: 2.5rem;
+    header img {
+        height: 50px;
     }
 
-
-    .accordion {
-        height: auto;
+    .frame-img {
+        height: 160px;
+        background-size: contain;
     }
 
-    .accordion ul li,
-    .accordion ul li:hover,
-    .accordion ul:hover li,
-    .accordion ul:hover li:hover {
-        position: relative;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        -webkit-transition: none;
-        transition: none;
+    #global-text {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    #number-section h1 {
-        font-size: 1.75rem;
-    }
-
-    #number-section h2 {
-        font-size: 1.5rem;
-    }
-
-
-    #brand-footer {
-        justify-content: center;
-    }
-
-    #quote {
-        border-top: 1px solid red;
-        padding-top: 5px;
-        margin-left: 50px;
+    #process img {
+        height: 80px;
     }
 }
 
