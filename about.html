@@ -19,41 +19,53 @@
 <body>
 
     <!--Navbar section-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand px-4" href="/index.html"><img src="images/om_logo.png" id="brand"></a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+        <a class="navbar-brand px-md-4" href="/index.html">
+            <img src="images/om_logo.png" id="brand">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse p-3" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h6-responsive" href="#" id="navbardrop" data-toggle="dropdown"><b>Industries</b>
+                    <a class="nav-link h6-responsive" href="#" id="navbardrop" data-toggle="dropdown">Industries<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="/construction.html">Construction</a>
-                        <a class="dropdown-item" href="/mining.html">Mining</a>
-                        <a class="dropdown-item" href="/manufacturing.html">Manufacturing</a>
-                        <a class="dropdown-item" href="">Diagnostics</a>
+                    <div class="shadow dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" href="construction.html">Construction</a>
+                        <a class="dropdown-item" href="mining.html">Mining</a>
+                        <a class="dropdown-item" href="manufacturing.html">Manufacturing</a>
+                        <a class="dropdown-item" href="logistics.html">Logistics</a>
+                        <a class="dropdown-item" href="healthcare.html">Healthcare</a>
+                        <a class="dropdown-item" href="pharma.html">Pharmaceuticals</a>
                     </div>
 
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><b>Solutions</b>
+                    <a class="nav-link" id="navbardrop" data-toggle="dropdown">Solutions<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="/audit-bench.html">Audit Bench</a>
-                        <a class="dropdown-item" href="/f2o.html">Feild to office</a>
-                        <a class="dropdown-item" href="/salesglobal.html">Sales Global</a>
-                        <a class="dropdown-item" href="/peoplefirst.html">People First</a>
+                    <div class="shadow dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" href="audit-bench.html">Audit Bench</a>
+                        <a class="dropdown-item" href="f2o.html">Feild to office</a>
+                        <a class="dropdown-item" href="salesglobal.html">Sales Global</a>
+                        <a class="dropdown-item" href="peoplefirst.html">People First</a>
                     </div>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/case-studies.html"><b>Case Studies</b></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><b>About</b></a>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <a class="nav-link" id="navbardrop" data-toggle="dropdown">Case studies<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="shadow dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="audit-bench.html">Hospitality</a>
+                        <a class="dropdown-item" href="audit-bench.html">Event Management</a>
+                        <a class="dropdown-item" href="audit-bench.html">Feild Collaboration</a>
+                        <a class="dropdown-item" href="/audit-bench.html">Mining Organisation</a>
+                        <a class="dropdown-item" href="/audit-bench.html">Medical Diagnostics</a>
+                        <a class="dropdown-item" href="/audit-bench.html">Recruitment Automation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">About<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="shadow dropdown-menu dropdown-menu-md-right">
                         <a class="dropdown-item" href="#">Profile</a>
                         <a class="dropdown-item" href="#">Culture</a>
                         <a class="dropdown-item" href="#">Testimonials</a>
@@ -63,6 +75,7 @@
             </ul>
         </div>
     </nav>
+
     <!--Header section-->
     <header class="container-fluid my-5">
         <div class="display-4 text-center section-heading mb-4">About us</div>

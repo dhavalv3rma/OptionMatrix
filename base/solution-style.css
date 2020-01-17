@@ -32,110 +32,28 @@ body a:hover {
 }
 
 .dropdown-menu {
-    max-width: 100px;
-    border: solid 1px #707070;
+    border: solid 1px #dddddd;
 }
+
 
 .dropdown-item:hover {
     color: #ffffff !important;
-    background: #707070;
-    border: #707070;
+    background: #23374D;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
 /*/////////cards-SECTION/////////*/
-#cards img {
+#process img {
     height: 120px;
 }
 
 /*////////////////////////frame-sol section////////////////////////*/
-.frame-img {
-    height: 460px;
-}
 
-#img1 {
-    background-image: url("/images/audit/F1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-#img2 {
-    background-image: url("/images/audit/F2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img3 {
-    background-image: url("/images/audit/F3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img4 {
-    background-image: url("/images/audit/F4.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img5 {
-    background-image: url("/images/audit/F5.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img6 {
-    background-image: url("/images/audit/F6.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img7 {
-    background-image: url("/images/audit/F7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img8 {
-    background-image: url("/images/audit/F8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img9 {
-    background-image: url("/images/audit/F9.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img10 {
-    background-image: url("/images/audit/EF1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img11 {
-    background-image: url("/images/audit/EF2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img12 {
-    background-image: url("/images/audit/EF3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img13 {
-    background-image: url("/images/audit/EF4.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#img14 {
-    background-image: url("/images/audit/EF5.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/*Images in html style*/
 
 /*/////////////Possibilities-section//////////////*/
 .pos-card .card-title {
@@ -229,18 +147,24 @@ footer a,
     width: 1px;
 }
 
-/*//////////////////////////////////////////////////////MEDIA QUERIES//////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////
+////////////MEDIA QUERIES//////////////
+/////////////////////////////////////*/
 
 /*Phones- 600px and low*/
 @media only screen and (max-width: 600px) {
 
-       header img {
+    header img {
         height: 50px;
     }
 
     .frame-img {
         height: 160px;
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     #global-text {
@@ -259,6 +183,13 @@ footer a,
     .display-4 {
         font-size: 3rem;
     }
+
+    .frame-img {
+        height: 460px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 }
 
 /*Laptops/screens- 600px and above*/

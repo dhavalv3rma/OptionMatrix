@@ -31,70 +31,23 @@ body a:hover {
 }
 
 .dropdown-menu {
-    max-width: 100px;
-    border: solid 1px #707070;
+    border: solid 1px #dddddd;
 }
+
 
 .dropdown-item:hover {
     color: #ffffff !important;
-    background: #707070;
-    border: #707070;
+    background: #23374D;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
 
-/*////////////////////////frame-sol section////////////////////////*/
+/*/////////Features-SECTION/////////*/
 
-#img1 {
-    background-image: url("/images/maintenance.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#img2 {
-    background-image: url("/images/store.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#img3 {
-    background-image: url("/images/outbound.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#img4 {
-    background-image: url("/images/storage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#img5 {
-    background-image: url("/images/f2o.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#img6 {
-    background-image: url("/images/dashboards.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#img7 {
-    background-image: url("/images/marketplace.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-/*/////////////Possibilities-section//////////////*/
 .pos-card .card-title {
     font-weight: 400;
 }
@@ -118,6 +71,10 @@ body a:hover {
     transition: all 0.2s ease-out;
     top: -7px;
 }
+
+/*////////////////////////frame-sol section////////////////////////*/
+
+/*All images are in style tag*/
 
 
 /*///////////////////////////FOOTER///////////////////////////*/
@@ -195,8 +152,14 @@ footer a,
         font-size: 2.5rem;
     }
 
+    header img {
+        height: 50px;
+    }
+
     .frame-img {
         height: 160px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     #global-text {
@@ -204,6 +167,9 @@ footer a,
         margin-bottom: 20px;
     }
 
+    #process img {
+        height: 80px;
+    }
 }
 
 /*Tablets- 600px and above*/
@@ -213,17 +179,11 @@ footer a,
         font-size: 3rem;
     }
 
-}
-
-/*Laptops/screens- 600px and above*/
-@media only screen and (min-width: 768px) {
-
-    .display-4 {
-        font-size: 3.5rem;
-    }
-
     .frame-img {
         height: 460px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     #features .list-group-flush li {
@@ -235,6 +195,14 @@ footer a,
         margin: 10px 0px 10px 0px;
     }
 
+}
+
+/*Laptops/screens- 600px and above*/
+@media only screen and (min-width: 768px) {
+
+    .display-4 {
+        font-size: 3.5rem;
+    }
 }
 
 /*large screens- 600px and above*/

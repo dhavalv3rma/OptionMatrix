@@ -11,15 +11,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="base/mdb.min.css">
-    <link rel="stylesheet" href="base/mining-style.css">
+    <link rel="stylesheet" href="base/industry-style.css">
+    <style>
+        #img1 {
+            background-image: url("/images/audit.jpg");
+        }
+
+        #img2 {
+            background-image: url("/images/store.jpg");
+        }
+
+        #img3 {
+            background-image: url("/images/finance.jpg");
+        }
+    </style>
+
     <title>Digital Disruption</title>
 </head>
 
 <body>
 
     <!--Navbar section-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand px-4" href="/index.html">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+        <a class="navbar-brand px-md-4" href="/index.html">
             <img src="images/om_logo.png" id="brand">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,41 +42,43 @@
         <div class="collapse navbar-collapse p-3" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link h6-responsive" href="#" id="navbardrop" data-toggle="dropdown"><b>Industries<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i></b>
+                    <a class="nav-link h6-responsive" href="#" id="navbardrop" data-toggle="dropdown">Industries<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-left">
-                        <a class="dropdown-item" href="/construction.html">Construction</a>
-                        <a class="dropdown-item" href="/mining.html">Mining</a>
-                        <a class="dropdown-item" href="/manufacturing.html">Manufacturing</a>
-                        <a class="dropdown-item" href="/logistics.html">Logistics</a>
+                    <div class="shadow dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" href="construction.html">Construction</a>
+                        <a class="dropdown-item" href="mining.html">Mining</a>
+                        <a class="dropdown-item" href="manufacturing.html">Manufacturing</a>
+                        <a class="dropdown-item" href="logistics.html">Logistics</a>
+                        <a class="dropdown-item" href="healthcare.html">Healthcare</a>
+                        <a class="dropdown-item" href="pharma.html">Pharmaceuticals</a>
                     </div>
 
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" id="navbardrop" data-toggle="dropdown"><b>Solutions<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i></b>
+                    <a class="nav-link" id="navbardrop" data-toggle="dropdown">Solutions<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-left">
-                        <a class="dropdown-item" href="/audit-bench.html">Audit Bench</a>
-                        <a class="dropdown-item" href="/f2o.html">Feild to office</a>
-                        <a class="dropdown-item" href="/salesglobal.html">Sales Global</a>
-                        <a class="dropdown-item" href="/peoplefirst.html">People First</a>
+                    <div class="shadow dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" href="audit-bench.html">Audit Bench</a>
+                        <a class="dropdown-item" href="f2o.html">Feild to office</a>
+                        <a class="dropdown-item" href="salesglobal.html">Sales Global</a>
+                        <a class="dropdown-item" href="peoplefirst.html">People First</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" id="navbardrop" data-toggle="dropdown"><b>Case studies<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i></b>
+                    <a class="nav-link" id="navbardrop" data-toggle="dropdown">Case studies<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="/audit-bench.html">Hospitality</a>
-                        <a class="dropdown-item" href="/audit-bench.html">Event Management</a>
-                        <a class="dropdown-item" href="/audit-bench.html">Feild Collaboration</a>
+                    <div class="shadow dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="audit-bench.html">Hospitality</a>
+                        <a class="dropdown-item" href="audit-bench.html">Event Management</a>
+                        <a class="dropdown-item" href="audit-bench.html">Feild Collaboration</a>
                         <a class="dropdown-item" href="/audit-bench.html">Mining Organisation</a>
                         <a class="dropdown-item" href="/audit-bench.html">Medical Diagnostics</a>
                         <a class="dropdown-item" href="/audit-bench.html">Recruitment Automation</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown"><b>About</b><i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">About<i class=" ml-1 fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="shadow dropdown-menu dropdown-menu-md-right">
                         <a class="dropdown-item" href="#">Profile</a>
                         <a class="dropdown-item" href="#">Culture</a>
                         <a class="dropdown-item" href="#">Testimonials</a>
@@ -78,7 +94,7 @@
         <div class="text-center pt-5 ">
             <div class="display-4 mb-4">Mining<div class="clearfix bg-danger my-3"></div>
             </div>
-            <p class="h5-responsive">The key driver of operating costs are accurate project estimation based on lead / lift and strip ratio, diesel consumption, operating performance, equipment performance, maintenance cost, project schedule, labour cost, drilling / blasting cost and real time project analysis.
+            <p class="h4-responsive">The key driver of operating costs are accurate project estimation based on lead / lift and strip ratio, diesel consumption, operating performance, equipment performance, maintenance cost, project schedule, labour cost, drilling / blasting cost and real time project analysis.
             </p>
         </div>
     </header>
@@ -117,27 +133,27 @@
             </p>
         </div>
         <div class="row" id="global-text">
-            <div class="col-sm-12 col-md-6 my-auto p-5">
-                <h2>Audit Automation</h2>
+            <div class="col-sm-12 col-md-6 my-auto py-5 p-md-5">
+                <h3>Audit Automation</h3>
                 <hr>
-                <p class="h4-responsive">This solution helps to ensure organization wide best practices across business units, locations, divisions and departments. It is an integrated solution to create checklists, schedule & record audits and track discrepancies to closure. Best practice checklists based on our global project experience have been pre-loaded into this solution.</p>
+                <p class="h5-responsive">This solution helps to ensure organization wide best practices across business units, locations, divisions and departments. It is an integrated solution to create checklists, schedule & record audits and track discrepancies to closure. Best practice checklists based on our global project experience have been pre-loaded into this solution.</p>
             </div>
             <div class="col-6 frame-img mx-auto" id="img1"></div>
         </div>
         <div class="row" id="global-text">
             <div class="col-6 frame-img mx-auto order-2 order-md-1" id="img2"></div>
-            <div class="col-sm-12 col-md-6 my-auto p-5 order-md-2">
-                <h2>Purchase and Stores</h2>
+            <div class="col-sm-12 col-md-6 my-auto py-5 p-md-5 order-md-2">
+                <h3>Purchase and Stores</h3>
                 <hr>
-                <p class="h4-responsive">This solution is to maintain the complete purchase and stores module starting from request raised internally to releasing purchase order and update the store accordingly. We have developed an application which gives hassle free monitoring of stores, spares, material and machinery which are common for a infra company. Vendor management, rating and price history are other key features of this management system.
+                <p class="h5-responsive">This solution is to maintain the complete purchase and stores module starting from request raised internally to releasing purchase order and update the store accordingly. We have developed an application which gives hassle free monitoring of stores, spares, material and machinery which are common for a infra company. Vendor management, rating and price history are other key features of this management system.
                 </p>
             </div>
         </div>
         <div class="row" id="global-text">
-            <div class="col-sm-12 col-md-6 my-auto p-5">
+            <div class="col-sm-12 col-md-6 my-auto py-5 p-md-5">
                 <h2>Fleet Financing</h2>
                 <hr>
-                <p class="h4-responsive">Any infra company where heavy machinery and equipment are used would require a finance module to manage their assets which are on loan from banks or other financial institutes. This application provides the user to manage their term loans, capital loans, EMI schedules. Give reminders on due dates and manage all payments which can be handled from the application directly. Reports can be generated for all activities as needed.
+                <p class="h5-responsive">Any infra company where heavy machinery and equipment are used would require a finance module to manage their assets which are on loan from banks or other financial institutes. This application provides the user to manage their term loans, capital loans, EMI schedules. Give reminders on due dates and manage all payments which can be handled from the application directly. Reports can be generated for all activities as needed.
                 </p>
             </div>
             <div class="col-6 frame-img mx-auto" id="img3"></div>
@@ -149,39 +165,39 @@
     <!--Possibilities-->
     <section class="container my-5 pb-5">
         <div class="text-center pt-5 ">
-            <div class="h1-responsive mb-4">Possibilities<div class="clearfix bg-danger my-3"></div>
-            </div>
+            <h1 class="mb-4">Possibilities<div class="clearfix bg-danger my-3"></div>
+            </h1>
 
         </div>
         <div class="row card-deck mt-5 text-center text-light pos-card">
-            <div class="card p-4 my-4 ">
+            <div class="card p-4 m-3 ">
                 <h5 class="card-title">Process Audit </h5>
-                <p class="card-body pl-0">Have best practices implemented every time and at all places for safe and efficient way to operations.</p>
+                <p class="card-body px-0">Have best practices implemented every time and at all places for safe and efficient way to operations.</p>
             </div>
-            <div class="card p-4 my-4">
+            <div class="card p-4 m-3">
                 <h5 class="card-title">Material Management </h5>
-                <p class="card-body pl-0">Stock taking, audits and inventory management are all managed in this module.</p>
+                <p class="card-body px-0">Stock taking, audits and inventory management are all managed in this module.</p>
             </div>
-            <div class="card p-4 my-4 ">
+            <div class="card p-4 m-3 ">
                 <h5 class="card-title">Project Management</h5>
-                <p class="card-body pl-0">Manage all projects to the company and check day to day activities on dashboards for management overview.</p>
+                <p class="card-body px-0">Manage all projects to the company and check day to day activities on dashboards for management overview.</p>
             </div>
-            <div class="card p-4 my-4 ">
+            <div class="card p-4 m-3 ">
                 <h5 class="card-title">Fleet Maintenance </h5>
-                <p class="card-body pl-0">Manage the preventive maintenance schedule for the fleet master. Checklists are tracked for condition and performance monitoring.</p>
+                <p class="card-body px-0">Manage the preventive maintenance schedule for the fleet master. Checklists are tracked for condition and performance monitoring.</p>
 
             </div>
-            <div class="card p-4 my-4 ">
+            <div class="card p-4 m-3 ">
                 <h5 class="card-title">Fleet Financing </h5>
-                <p class="card-body pl-0">Equipment financing and mortgage, term loans and working capital loans are setup here. EMI calculations and schedule alerts are published.</p>
+                <p class="card-body px-0">Equipment financing and mortgage, term loans and working capital loans are setup here. EMI calculations and schedule alerts are published.</p>
             </div>
-            <div class="card p-4 my-4 ">
+            <div class="card p-4 m-3 ">
                 <h5 class="card-title">Report Syndication </h5>
-                <p class="card-body pl-0">See overall summary on dashboard and have options to feed in data.</p>
+                <p class="card-body px-0">See overall summary on dashboard and have options to feed in data.</p>
             </div>
-            <div class="card p-4 my-4">
+            <div class="card p-4 m-3">
                 <h5 class="card-title">Safety Audit </h5>
-                <p class="card-body pl-0">Field to office collaboration on safety audits and updates.</p>
+                <p class="card-body px-0">Field to office collaboration on safety audits and updates.</p>
             </div>
         </div>
     </section>
@@ -189,8 +205,8 @@
     <!--case-study section-->
     <section class="container my-5 pb-5">
         <div class="text-center py-5 ">
-            <div class="h1-responsive mb-4">Case Studies<div class="clearfix bg-danger my-3"></div>
-            </div>
+            <h1 class="mb-4">Case Studies<div class="clearfix bg-danger my-3"></div>
+            </h1>
             <p class="h5-responsive">Growing from 3 to 15 projects made the client’s organisation’s management to explore for ERP Solutions. Visibility, Transparency & Planning of the procurement process for purchasing right spares as per huge requirement and fleet management was next to impossible managing manually at this scale (15 projects). There was a need of hour for effectively managing procurement activities.
             </p>
         </div>
