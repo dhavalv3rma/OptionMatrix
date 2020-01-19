@@ -313,9 +313,9 @@
             <p class="h5-responsive">We believe 100% in ensuring quality and follow 6-sigma rule as a team. <br> Innovation and leadership are the pillars of our progress.
             </p>
         </div>
-        <div class="d-none d-lg-block mt-5" id="solution-tabs">
+        <div class="d-none d-lg-block mt-5 py-3" id="solution-tabs">
             <div class="row mt-5">
-                <div class="col-2">
+                <div class="col-2 my-auto">
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-one" role="tab" aria-controls="home">Field to office Collaboration</a>
                         <a class="list-group-item list-group-item-action " id="list-profile-list" data-toggle="list" href="#list-two" role="tab" aria-controls="profile">Audit Automation</a>
@@ -325,7 +325,7 @@
                         <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-six" role="tab" aria-controls="settings">Online food Ordering</a>
                     </div>
                 </div>
-                <div class="col-9" id="sol-info">
+                <div class="col-9 h-100 pb-3" id="sol-info">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active h-100" id="list-one" role="tabpanel" aria-labelledby="list-home-list" style="">
                             <div class="container h-100 ">
@@ -443,7 +443,7 @@
         </div>
 
         <!--for xs and sm screens-->
-        <div class="col d-sm-block d-lg-none mt-5 sol-accord" id="accordion">
+        <div class="d-sm-block d-lg-none mt-5 sol-accord" id="accordion">
             <div class="card">
                 <div class="card-header p-0" id="headingOne">
                     <h5 class="m-0 text-center">
@@ -581,52 +581,116 @@
     </section>
 
     <!--Testimonial section-->
-    <section class="container-fluid text-center my-5" id="banner-dark2">
+    <section class="container-fluid text-center my-5" id="testim-banner">
         <div class="container">
             <div class="text-light pt-5">
                 <h2 class="text-center mb-5"><b>Testimonials</b>
                     <div class="clearfix2 bg-danger mb-3" style="width: 120px"></div>
                 </h2>
-                <div class="card-deck justify-content-around pt-5 " id="set-one">
-                    <div class="card text-muted p-4">
-                        <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
-                            <img src="images/quote.svg" style="height: 20px;" alt="quote">
+
+                <!--for md and lg screens-->
+                <div class="d-none d-md-block">
+                    <div class="card-deck  justify-content-around pt-2 " id="set-one">
+                        <div class="card col-4 text-muted p-4 mt-3">
+                            <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
+                                <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                            </div>
+                            <div class="my-3 client-img">
+                                <img class="rounded-circle" src="images/Jennie-Thumbnail.png" alt="">
+                            </div>
+                            <p class="">We have been working with Option Matrix for over a year now, we have been incredibly happy with the product they deliver to us and the communication we have...</p>
+                            <hr>
+                            <h5><b class="text-dark">Jennie Ross</b></h5>
+                            <p>MLS Delivery, Texas, USA</p>
                         </div>
-                        <div class="my-3 client-img">
-                            <img class="rounded-circle" src="images/Jennie-Thumbnail.png" alt="">
+                        <div class="card col-4  p-4 bg-dark  mt-3" style="border: 1px solid #444444">
+                            <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
+                                <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                            </div>
+                            <div class="my-3 client-img">
+                                <img class="rounded-circle" src="images/paul-thumbnail.png" alt="">
+                            </div>
+                            <p class="text-light">Interview is the first step for selection of a candidate and for this we have an automated system which records calls, produces reports and shortlists candidates.</p>
+                            <hr style="border-top: 1px solid #343434 ">
+                            <h5><b class="text-light">Paul Bailo</b></h5>
+                            <p class="text-light">Phone Interview Pro, USA</p>
                         </div>
-                        <p class="m-3">We have been working with Option Matrix for over a year now, we have been incredibly happy with the product they deliver to us and the communication we have...</p>
-                        <hr>
-                        <h5><b class="text-dark">Jennie Ross</b></h5>
-                        <p>MLS Delivery, Texas, USA</p>
-                    </div>
-                    <div class="card col-sm-9  p-4 bg-dark" style="border: 1px solid #444444">
-                        <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
-                            <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                        <div class="card col-4 text-muted p-4  mt-3">
+                            <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
+                                <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                            </div>
+                            <div class="my-3 client-img">
+                                <img class="rounded-circle" src="images/venu-thumbnail.png" alt="">
+                            </div>
+                            <p class="">Managing 10+ operational sites for procurement activities was a difficult and challenging job for us. Reviewing P/L statements, monthly prediction of Expenditure</p>
+                            <hr>
+                            <h5><b class="text-dark">Venu Gopal Reddy</b></h5>
+                            <p>Head Office Manager, India</p>
                         </div>
-                        <div class="my-3 client-img">
-                            <img class="rounded-circle" src="images/paul-thumbnail.png" alt="">
-                        </div>
-                        <p class="text-light m-3">Interview is the first step for selection of a candidate and for this we have an automated system which records calls, produces reports and shortlists candidates.</p>
-                        <hr style="border-top: 1px solid #343434 ">
-                        <h5><b class="text-light">Paul Bailo</b></h5>
-                        <p class="text-light">Phone Interview Pro, USA</p>
-                    </div>
-                    <div class="card  text-muted p-4">
-                        <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
-                            <img src="images/quote.svg" style="height: 20px;" alt="quote">
-                        </div>
-                        <div class="my-3 client-img">
-                            <img class="rounded-circle" src="images/venu-thumbnail.png" alt="">
-                        </div>
-                        <p class="m-3">Managing 10+ operational sites for procurement activities was a difficult and challenging job for us. Reviewing P/L statements, monthly prediction of Expenditure</p>
-                        <hr>
-                        <h5><b class="text-dark">Venu Gopal Reddy</b></h5>
-                        <p>Head Office Manager, India</p>
                     </div>
                 </div>
 
-                <button class="btn btn-warning text-dark my-5" id="set-toggle">See More</button>
+
+                <!--sm screens-->
+                <div class="card-deck d-block d-md-none justify-content-around pt-2 " id="set-one">
+                    <div class="card col-12 text-muted p-4 mt-4">
+                        <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
+                            <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                        </div>
+                        <div class="row">
+                            <div class="col-3 my-auto">
+                                <div class="my-3 client-img">
+                                    <img class="rounded-circle" src="images/Jennie-Thumbnail.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 my-auto">
+                                <p class="">We have been working with Option Matrix for over a year now, we have been incredibly happy with the product they deliver to us and the communication we have...</p>
+                                <hr>
+                                <h5><b class="text-dark">Jennie Ross</b></h5>
+                                <p>MLS Delivery, Texas, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12  p-4 bg-dark  mt-4" style="border: 1px solid #444444">
+                        <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
+                            <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                        </div>
+                        <div class="row">
+                            <div class="col-3 my-auto">
+                                <div class="my-3 client-img">
+                                    <img class="rounded-circle" src="images/paul-thumbnail.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 my-auto">
+                                <p class="text-light">Interview is the first step for selection of a candidate and for this we have an automated system which records calls, produces reports and shortlists candidates.</p>
+                                <hr style="border-top: 1px solid #343434 ">
+                                <h5><b class="text-light">Paul Bailo</b></h5>
+                                <p class="text-light">Phone Interview Pro, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12  p-4  mt-4">
+                        <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
+                            <img src="images/quote.svg" style="height: 20px;" alt="quote">
+                        </div>
+                        <div class="row">
+                            <div class="col-3 my-auto">
+                                <div class="my-3 client-img">
+                                    <img class="rounded-circle" src="images/venu-thumbnail.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 my-auto">
+                                <p>Managing 10+ operational sites for procurement activities was a difficult and challenging job for us. Reviewing P/L statements, monthly prediction of Expenditure.</p>
+                                <hr>
+                                <h5><b class="text-dark">Venu Gopal Reddy</b></h5>
+                                <p>Head Office Manager, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a href=""><button class="btn btn-warning text-dark my-5" id="set-toggle">See More</button></a>
             </div>
         </div>
     </section>

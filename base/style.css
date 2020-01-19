@@ -22,7 +22,7 @@ button {
     text-decoration-style: none;
 }
 
-/*///////////////////////////NAVBAR///////////////////////////*/
+/*////////////NAVBAR////////////*/
 .navbar {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -49,7 +49,7 @@ button {
     margin-top: 0;
 }
 
-/*///////////////////////////HEAD-SECTION///////////////////////////*/
+/*//////////HEAD-SECTION///////////*/
 
 
 #sm-img img {
@@ -57,7 +57,7 @@ button {
 }
 
 
-/*///////////////////////////DOMAIN-SECTION///////////////////////////*/
+/*//////////DOMAIN-SECTION/////////*/
 
 
 /*ACCORDION*/
@@ -250,11 +250,7 @@ button {
 }
 
 
-
-
-
-
-/*///////////////////////////NUMBER-SECTION///////////////////////////*/
+/*////////NUMBER-SECTION///////////*/
 
 
 
@@ -284,7 +280,8 @@ button {
 }
 
 
-/*///////////////////////////SOLUTION-SECTION///////////////////////////*/
+/*/////////SOLUTION-SECTION//////////*/
+
 .list-group-item {
     border: 0px solid #ceced2;
 }
@@ -314,10 +311,6 @@ button {
     border-radius: 4px;
 }
 
-.sol-img {
-    height: 260px;
-    box-shadow: 5px 5px 15px 5px #888888;
-}
 
 #sol-info {
     background: #F4F5F8;
@@ -336,8 +329,8 @@ button {
 }
 
 
-/*///////////////////////////TESTIMONIAL-SECTION///////////////////////////*/
-#banner-dark2 {
+/*//////////TESTIMONIAL-SECTION/////////*/
+#testim-banner {
     background-image: url("/images/banner-back.jpg");
     filter: grayscale(10%);
     background-attachment: fixed;
@@ -351,13 +344,16 @@ button {
 .client-img img {
     clip-path: circle(52px at center);
     height: 80px;
-    //border: 1px solid #333;
+}
+
+#testim-banner .card {
+    min-width: 300px;
+
 }
 
 
 
-
-/*////////////////////////Map section////////////////////////*/
+/*/////////Map section//////////*/
 
 #global {
     width: 100%;
@@ -501,14 +497,16 @@ footer li a:hover {
         font-size: 3rem;
     }
 
-    #head_section {
-        height: 480px;
-    }
+
 
     #head-img img {
-        height: 200px;
+        height: 240px;
     }
 
+    .sol-img {
+        height: 200px;
+        box-shadow: 5px 5px 15px 5px #888888;
+    }
 
 
 }
@@ -526,7 +524,7 @@ footer li a:hover {
     }
 
     #head-img img {
-        height: 420px;
+        height: 320px;
     }
 
     #solution-tabs {
@@ -546,5 +544,8 @@ footer li a:hover {
         height: 520px;
     }
 
+    .sol-img {
+        height: 260px;
+    }
 
 }
