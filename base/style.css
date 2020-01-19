@@ -18,6 +18,10 @@ body p {
     transition: all 0.1s ease-out;
 }
 
+button {
+    text-decoration-style: none;
+}
+
 /*///////////////////////////NAVBAR///////////////////////////*/
 .navbar {
     -webkit-box-shadow: none !important;
@@ -31,6 +35,7 @@ body p {
 
 .dropdown-menu {
     border: solid 1px #dddddd !important;
+
 }
 
 
@@ -229,16 +234,15 @@ body p {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .75);
 }
 
-.card {
+.domain-card .card {
     //min-width: 180px;
     top: 0px;
 }
 
-.card:hover {
+.domain-card .card:hover {
     transition: all 0.2s ease-out;
     top: -8px;
 }
-
 
 .domain-card .card:hover {
     transition: all 0.2s ease-out;
@@ -311,6 +315,7 @@ body p {
 }
 
 .sol-img {
+    height: 260px;
     box-shadow: 5px 5px 15px 5px #888888;
 }
 
@@ -318,45 +323,17 @@ body p {
     background: #F4F5F8;
 }
 
+/*for sm screens*/
 
-
-/*#list-one {
-    background-image: url("/images/studio-republic-fotKKqWNMQ4-unsplash.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
+.sol-accord button .sol-accord button:hover {
+    text-decoration: none;
 }
 
-#list-two {
-    background-image: url("/images/audit.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
+.sol-accord button[aria-expanded="true"] {
+    text-decoration: none;
+    color: white;
+    background: #23374D;
 }
-
-#list-three {
-    background-image: url("/images/brandon-griggs-wR11KBaB86U-unsplash.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-}
-
-#list-four {
-    background-image: url("/images/sales.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-}
-
-#list-five {
-    background-image: url("/images/dashboards.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-}
-
-#list-six {
-    background-image: url("/images/order.jpg");
-    background-size: cover;
-    filter: grayscale(100%);
-}*/
-
-
 
 
 /*///////////////////////////TESTIMONIAL-SECTION///////////////////////////*/
@@ -484,21 +461,8 @@ footer li a:hover {
         font-size: 2.5rem;
     }
 
-
-    .accordion {
-        height: auto;
-    }
-
-    .accordion ul li,
-    .accordion ul li:hover,
-    .accordion ul:hover li,
-    .accordion ul:hover li:hover {
-        position: relative;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        -webkit-transition: none;
-        transition: none;
+    #solution-tabs {
+        display: none;
     }
 
     #number-section h1 {
@@ -537,13 +501,21 @@ footer li a:hover {
         font-size: 3rem;
     }
 
+    #head_section {
+        height: 480px;
+    }
+
+    #head-img img {
+        height: 200px;
+    }
+
 
 
 }
 
 
 /*Laptops/screens- 600px and above*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
     .display-4 {
         font-size: 3.5rem;
@@ -553,13 +525,25 @@ footer li a:hover {
         height: 580px;
     }
 
+    #head-img img {
+        height: 420px;
+    }
+
+    #solution-tabs {
+        display: block;
+    }
+
 }
 
 
 /*large screens- 600px and above*/
 @media only screen and (min-width: 1367px) {
     #head_section {
-        height: 580px;
+        height: 790px;
+    }
+
+    #head-img img {
+        height: 520px;
     }
 
 
