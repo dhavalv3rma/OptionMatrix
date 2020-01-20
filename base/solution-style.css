@@ -1,8 +1,7 @@
 html,
 body {
     margin: 0px;
-    padding: 0px;
-    cursor: default;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -12,9 +11,6 @@ body a:hover {
     color: #ffffff;
 }
 
-* {
-    transition: all 0.1s ease-out;
-}
 
 .clearfix {
     margin: auto;

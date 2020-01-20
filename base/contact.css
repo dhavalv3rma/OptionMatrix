@@ -1,6 +1,7 @@
 html,
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 p,
@@ -16,9 +17,6 @@ body a:hover {
     color: #ffffff;
 }
 
-* {
-    transition: all 0.1s ease-out;
-}
 
 .clearfix {
     margin: auto;

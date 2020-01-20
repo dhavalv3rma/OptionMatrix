@@ -1,10 +1,7 @@
         /*navbar on scroll*/
         var navbar = $('nav');
-
         window.onscroll = function () {
-
-            // pageYOffset or scrollY
-            if (window.pageYOffset > 100) {
+            if (window.pageYOffset > 99) {
                 $('nav').addClass('scrolled')
 
             } else {
@@ -29,7 +26,6 @@
 
         /*number-section*/
         window.onscroll = function () {
-
             if (window.pageYOffset > 1000) {
                 $('.counter').each(function () {
                     var $this = $(this),
@@ -54,7 +50,8 @@
 
             } else {
 
-            }};
+            }
+        };
 
 
 
