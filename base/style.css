@@ -42,7 +42,8 @@ nav.scrolled {
     border: solid 1px #dddddd !important;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item:active {
     color: #ffffff !important;
     background: #23374D;
 }
