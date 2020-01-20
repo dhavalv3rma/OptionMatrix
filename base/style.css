@@ -22,12 +22,17 @@ button {
     text-decoration-style: none;
 }
 
+
 /*////////////NAVBAR////////////*/
 .navbar {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
+nav.scrolled {
+    border-bottom: solid 1px #dddddd;
+    padding: 0px;
+}
 
 #brand {
     height: 34px;
@@ -35,9 +40,7 @@ button {
 
 .dropdown-menu {
     border: solid 1px #dddddd !important;
-
 }
-
 
 .dropdown-item:hover {
     color: #ffffff !important;
@@ -136,12 +139,12 @@ button {
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 2px;
-    top: 160px;
+    top: 140px;
 }
 
 .accordion ul li div a p {
     color: #ffffff;
-    top: 160px;
+    margin-top: 220px;
     font-size: 13.5px;
 }
 
@@ -202,12 +205,16 @@ button {
 }
 
 .accordion ul:hover li {
+    transition: all 0.5s ease-out;
     width: 8%;
 }
+
+
 
 .accordion ul:hover li:hover {
     width: 60%;
 }
+
 
 .accordion ul:hover li:hover a {
     background: rgba(0, 0, 0, 0.7);
@@ -218,6 +225,33 @@ button {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+}
+
+.accordion #hide {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.56);
+    margin: 0px;
+    padding: 0px;
+}
+
+.accordion ul:hover li:hover #hide {
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    white-space: inherit;
+    position: absolute;
+    top: 120px;
+    z-index: 9999999;
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
 
 /*for sm cards*/
@@ -235,7 +269,6 @@ button {
 }
 
 .domain-card .card {
-    //min-width: 180px;
     top: 0px;
 }
 
@@ -364,7 +397,6 @@ button {
 }
 
 #global-text {
-    overflow: hidden;
     background: #F4F5F8;
 }
 
@@ -457,6 +489,11 @@ footer li a:hover {
         font-size: 2.5rem;
     }
 
+    nav {
+        border-bottom: 1px solid #dddddd;
+        padding: 2px;
+    }
+
     #solution-tabs {
         display: none;
     }
@@ -472,7 +509,7 @@ footer li a:hover {
     #global {
         margin-top: 20px;
         width: 100%;
-        height: 220px;
+        height: 230px;
     }
 
 

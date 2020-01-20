@@ -18,14 +18,32 @@ body a:hover {
 }
 
 /*///////////////////////////NAVBAR///////////////////////////*/
+.navbar {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+nav.scrolled {
+    border-bottom: solid 1px #dddddd;
+    padding: 0px;
+}
+
 #brand {
     height: 34px;
 }
 
+.dropdown-menu {
+    border: solid 1px #dddddd !important;
+}
 
 .dropdown-item:hover {
-    color: #ffffff;
-    background: #707070;
+    color: #ffffff !important;
+    background: #23374D;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
 
@@ -87,11 +105,28 @@ footer span h2 {
 /*//////////////////////////////////////////////////////MEDIA QUERIES//////////////////////////////////////////////////////*/
 
 @media only screen and (max-width: 600px) {
+    #brand {
+        height: 30px;
+    }
+
     .display-4 {
         font-size: 2.5rem;
     }
 
+    nav {
+        border-bottom: 1px solid #dddddd;
+    }
 
+    #brand-footer {
+        justify-content: center;
+    }
+
+    #quote {
+        border-top: 1px solid red;
+        padding-top: 5px;
+        margin-left: 50px;
+    }
+}
 }
 
 @media only screen and (min-width: 601px) {

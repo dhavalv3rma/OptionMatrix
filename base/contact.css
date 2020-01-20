@@ -27,20 +27,38 @@ body a:hover {
 }
 
 /*///////////////////////////NAVBAR///////////////////////////*/
-#brand {
-    height: 34px;
-}
-
 .navbar {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
+nav.scrolled {
+    border-bottom: solid 1px #dddddd;
+    padding: 0px;
+}
+
+#brand {
+    height: 34px;
+}
+
+.dropdown-menu {
+    border: solid 1px #dddddd !important;
+
+}
+
 
 .dropdown-item:hover {
-    color: #ffffff;
-    background: #707070;
+    color: #ffffff !important;
+    background: #23374D;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+
+/*head section*/
 
 #contact-img {
     background-image: url("/images/burst-kUqqaRjJuw0-unsplash.jpg");
@@ -96,7 +114,6 @@ footer p {
 
 #brand2 {
     height: 36px;
-    border-right: 1px solid;
 }
 
 ul {
@@ -133,16 +150,28 @@ footer span h2 {
     color: #e1306c;
 }
 
-.foot-link {
-    border-left: 1px solid red;
+.seperator {
+    border: 0 4px 0 0 solid;
+    margin: 0 20px 0 20px;
+    background: #DC3545;
+    width: 1px;
 }
-
 
 /*//////////////////////////////////////////////////////MEDIA QUERIES//////////////////////////////////////////////////////*/
 
 @media only screen and (max-width: 600px) {
     .display-4 {
         font-size: 2.5rem;
+    }
+
+    #brand-footer {
+        justify-content: center;
+    }
+
+    #quote {
+        border-top: 1px solid red;
+        padding-top: 5px;
+        margin-left: 50px;
     }
 
 

@@ -26,14 +26,19 @@ body a:hover {
     box-shadow: none !important;
 }
 
+nav.scrolled {
+    border-bottom: solid 1px #dddddd;
+    padding: 0px;
+}
+
 #brand {
     height: 34px;
 }
 
 .dropdown-menu {
-    border: solid 1px #dddddd;
-}
+    border: solid 1px #dddddd !important;
 
+}
 
 .dropdown-item:hover {
     color: #ffffff !important;
