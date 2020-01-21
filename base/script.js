@@ -1,7 +1,7 @@
         /*navbar on scroll*/
         var navbar = $('nav');
         window.onscroll = function () {
-            if (window.pageYOffset > 99) {
+            if (window.pageYOffset > 132) {
                 $('nav').addClass('scrolled')
 
             } else {
