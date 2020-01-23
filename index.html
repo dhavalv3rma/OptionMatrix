@@ -14,9 +14,14 @@
     <link rel="stylesheet" href="base/style.css">
     <link rel="stylesheet" href="base/grid-accordion.min.css">
     <title>Digital Disruption</title>
+
+
+
 </head>
 
 <body>
+    <!--Navbar section-->
+
     <!--Navbar section-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
         <button class="d-block d-lg-none" id="sidenav-toggle"><span class="navbar-toggler-icon"></span></button>
@@ -124,9 +129,9 @@
                 </div>
             </li>
         </ul>
-        <div class="col-12 text-center mt-5 " id="sidebar-contact">
+        <div class="col-12 text-center mt-5" id="sidebar-contact">
             <a href="contact.html"><button href="contact.html" class="btn btn-success mt-4">Contact Us</button></a>
-            <div class="icons mt-4">
+            <div class="icons mt-4 pt-2">
                 <a href="https://www.linkedin.com/company/option-matrix-infotech-pvt-ltd./" target="_blank" class="fa fa-linkedin fa-1x mx-2 p-1" id="in-btn"></a>
                 <a href="https://www.facebook.com/OptionMatrix-Infotech-627091467626364/" target="_blank" class="fa fa-facebook fa-1x mx-2 p-1" id="fb-btn"></a>
                 <a href="https://twitter.com/optionmatrix4" target="_blank" class="fa fa-twitter fa-1x  mx-2 p-1" id="tweet-btn"></a>
@@ -136,6 +141,7 @@
         </div>
     </div>
 
+    <!--Navbar section Ends-->
 
     <!--Head section-->
     <header class="container-fluid text-center mb-5" id="head_section">
@@ -685,13 +691,13 @@
                         <div class="rounded p-2 bg-warning" style="position: absolute;top: -18px;">
                             <img src="images/quote.svg" style="height: 20px;" alt="quote">
                         </div>
-                        <div class="row">
+                        <div class="row text-muted">
                             <div class="col-3 my-auto">
                                 <div class="client-img">
                                     <img class="rounded-circle" src="images/venu-thumbnail.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-9 my-2">
+                            <div class="col-9 my-2 ">
                                 <p class="my-4">Managing 10+ operational sites for procurement activities was a difficult and challenging job for us. Reviewing P/L statements, monthly prediction of Expenditure.</p>
                                 <hr>
                                 <h5><b class="text-dark">Venu Gopal Reddy</b></h5>
@@ -953,11 +959,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="base/mdb.min.js"></script>
     <script src="base/jquery.gridAccordion.min.js"></script>
+    <script src="base/mdb.min.js"></script>
+    <script src="base/script.js"></script>
+    <script>
+        window.onscroll = function() {
+            navbar_scroll();
+            number_section();
+        };
+
+        function navbar_scroll() {
+            var navbar = $('nav');
+            if (window.pageYOffset > 132) {
+                $('nav').addClass('scrolled')
+
+            } else {
+                $('nav').removeClass('scrolled');
+                $('nav').addClass('unscrolled')
+            }
+
+        }
+
+        function number_section() {
+            if (window.pageYOffset > 1000) {
+                $('.counter').each(function() {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    }, {
+                        duration: 9000,
+                        easing: 'linear',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+                    });
+                });
+
+            }
+        }
+    </script>
+
+
 
     <!-- Optional JavaScript -->
-    <script src="base/script.js"></script>
-</body>
-
-</html>
+</body></html>

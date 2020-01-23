@@ -5,6 +5,24 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar:hover {
+    opacity=0;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #23374d;
+    border: 1px solid #fff;
+}
+
 body a,
 body a:hover {
     text-decoration: none !important;
@@ -28,9 +46,17 @@ body a:hover {
 }
 
 nav.scrolled {
-    border-bottom: solid 1px #dddddd;
-
+    padding: 0px;
+    transition: 0.4s;
+    font-weight: 300;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
 }
+
+nav.unscrolled {
+    transition: 0.4s;
+}
+
 
 #brand {
     height: 34px;
@@ -73,13 +99,14 @@ nav .dropdown:hover .dropdown-menu {
 .ct-sidenav {
     position: relative;
     width: 60%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     z-index: 9990;
     top: 0;
     right: -34.3rem;
     padding-top: 60px;
     background: #23374D;
+    border-left: 1px solid #23374d;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-transition: right 0.25s ease-in-out;
@@ -112,12 +139,14 @@ nav .dropdown:hover .dropdown-menu {
 }
 
 .ct-sidenav-list {
+    z-index: 99999;
     margin-top: 20px;
     color: #ffffff;
     font-size: 2rem;
 }
 
 .ct-sidenav-list > li > a {
+    z-index: 99999;
     text-decoration: none;
     display: inline-block;
     line-height: .5rem;
@@ -125,7 +154,7 @@ nav .dropdown:hover .dropdown-menu {
     width: 100%;
     padding-left: 10%;
     border: none;
-    background-color: transparent;
+    background-color: #23374d;
     color: #fff;
     font-size: 1rem;
     -webkit-transition: all 250ms ease-in-out;
@@ -147,17 +176,32 @@ nav .dropdown:hover .dropdown-menu {
 
 .panel {
     -webkit-transition: all 250ms ease-in-out;
-    transition: all 2s ease-in-out;
     font-size: 1rem;
     padding: 10px 18px;
     display: none;
     background-color: white;
     overflow: hidden;
+    z-index: 99999;
 }
 
 #sidebar-contact {
-    position: relative;
-    top: 25%;
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+}
+
+#sidebar-contact #btn-contact {
+    z-index: -1 !important;
+}
+
+
+/*solutions page cards section*/
+#process img {
+    height: 120px;
+}
+
+#belief img {
+    height: 220px;
 }
 
 /*/////////Features-SECTION/////////*/
@@ -189,6 +233,29 @@ nav .dropdown:hover .dropdown-menu {
 /*////////////////////////frame-sol section////////////////////////*/
 
 /*All images are in style tag*/
+
+/*Contact page*/
+
+#contact-img {
+    background-image: url("/images/burst-kUqqaRjJuw0-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+/*.map-responsive {
+    overflow: hidden;
+    padding: 50%;
+    position: relative;
+    height: 0;
+}*/
+
+
+.map-responsive iframe {
+    overflow: hidden;
+    min-height: 280px;
+    width: 100%;
+}
 
 
 /*///////////////////////////FOOTER///////////////////////////*/
@@ -266,14 +333,21 @@ footer a,
         font-size: 2.5rem;
     }
 
-    header img {
-        height: 50px;
+    #brand {
+        height: 34px;
+    }
+
+
+    nav {
+        padding: 5px 15px 5px 15px !important;
     }
 
     .frame-img {
         height: 160px;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
+
     }
 
     #global-text {
@@ -283,6 +357,16 @@ footer a,
 
     #process img {
         height: 80px;
+    }
+
+    #brand-footer {
+        justify-content: center;
+    }
+
+    #quote {
+        border-top: 1px solid red;
+        padding-top: 5px;
+        margin-left: 50px;
     }
 }
 
@@ -295,8 +379,8 @@ footer a,
 
     .frame-img {
         height: 460px;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center;
     }
 
