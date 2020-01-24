@@ -250,6 +250,7 @@ nav .dropdown:hover .dropdown-menu {
 
 /*All images are in style tag*/
 
+
 /*Contact page*/
 
 #contact-img {
@@ -369,6 +370,11 @@ footer a,
     #global-text {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    /*solution brand image*/
+    #solution-brand {
+        width: 90%;
     }
 
     #process img {
