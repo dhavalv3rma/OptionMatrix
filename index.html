@@ -142,13 +142,13 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" id="navbardrop" data-toggle="dropdown">Case studies<i class="ml-1 fa fa-angle-down" aria-hidden="true"></i>
+                    <a class="nav-link" id="navbardrop" data-toggle="dropdown">Case Studies<i class="ml-1 fa fa-angle-down" aria-hidden="true"></i>
                     </a>
                     <div class="shadow dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="/html/case-studies/audit-case.html">Audit Bench</a>
-                        <a class="dropdown-item" href="/html/case-studies/f20-case.html">Field to Office</a>
-                        <a class="dropdown-item" href="/html/case-studies/mining-case.html">Mining</a>
-                        <a class="dropdown-item" href="/html/case-studies/medical-case.html">Medical Diagnostics</a>
+                        <a class="dropdown-item" href="/html/case-studies/audit-case.html">Audit Automation</a>
+                        <a class="dropdown-item" href="/html/case-studies/f20-case.html">Recruitment Automation</a>
+                        <a class="dropdown-item" href="/html/case-studies/mining-case.html">Purchase Automation</a>
+                        <a class="dropdown-item" href="/html/case-studies/medical-case.html">Healthcare Scheduling</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -231,7 +231,7 @@
                 </div>
             </li>
             <li class="">
-                <a class="accordion-mini">Case studies<i class="ml-1 fa fa-angle-down" aria-hidden="true"></i>
+                <a class="accordion-mini">Case Studies<i class="ml-1 fa fa-angle-down" aria-hidden="true"></i>
                 </a>
                 <div class="panel">
                     <a class="dropdown-item" href="/html/case-studies/audit-case.html">Audit Bench</a>
@@ -274,7 +274,6 @@
             <div class="col-md-6 col-sm-12 my-auto px-5" id="head-text">
                 <div class="text-md-left px-md-5">
                     <h2 class="mb-3">Quality is everything. <br> Everything is People.</h2>
-                    <hr>
                     <p class="h5-responsive">We have served more than 100+ business leaders through 210+ engagements in 9 countries & our core strength is business requirement translation and Initiutive User Experience. </p>
                 </div>
             </div>
@@ -404,7 +403,7 @@
         </div>
 
 
-        <p class="h5-responsive text-center pt-5">Global experience enables us to contribute best practices in solution design where we combine our insights with client business needs. Nearly 50% of our revenue comes from projects in USA. India accounts for about 20% of our project activities. </p>
+        <p class="h5-responsive text-center pt-5">Nearly half of our revenue comes from projects in North America. India accounts for about 20% of our project activities.</p>
     </section>
 
     <!--Number section-->
@@ -1129,5 +1128,20 @@
 
             }
         }
+
+        /*Homepage country accordion*/
+        $('#my-accordion').gridAccordion({
+            width: 600,
+            height: 500,
+            responsive: 'true',
+            responsiveMode: 'auto',
+            columns: 3,
+            rows: 3,
+            mouseWheel: false,
+            openPanelDuration: 400,
+            closePanelDuration: 300,
+            mouseDelay: 0,
+            autoplay: false
+        });
     </script>
 </body></html>

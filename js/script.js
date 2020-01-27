@@ -59,23 +59,6 @@ for (i = 0; i < acc.length; i++) {
 /*Mobile Navigation Ends*/
 
 
-/*Homepage country accordion*/
-$('#my-accordion').gridAccordion({
-    width: 600,
-    height: 500,
-    responsive: 'true',
-    responsiveMode: 'auto',
-    columns: 3,
-    rows: 3,
-    mouseWheel: false,
-    openPanelDuration: 400,
-    closePanelDuration: 300,
-    mouseDelay: 0,
-    autoplay: false
-});
-
-
-
 
 /*footer-date*/
 $('#date').text(new Date().getFullYear());
