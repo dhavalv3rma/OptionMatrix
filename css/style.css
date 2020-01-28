@@ -265,16 +265,10 @@ nav .dropdown:hover .dropdown-menu {
     transition: all 400ms ease;
 }
 
-.accordion ul li div a h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-    top: 140px;
-}
 
 .accordion ul li div a p {
     color: #ffffff;
-    margin-top: 220px;
+    margin-top: 136px;
     font-size: 13.5px;
 }
 
@@ -288,7 +282,7 @@ nav .dropdown:hover .dropdown-menu {
 
 .accordion ul li:nth-child(2),
 .two {
-    background-image: url("/images/mining.jpg");
+    background-image: url("/images/logis.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -362,7 +356,6 @@ nav .dropdown:hover .dropdown-menu {
     top: 80%;
     font-size: 16px;
     font-weight: 400;
-    white-space: nowrap;
     background: rgba(255, 255, 255, 0.56);
     margin: 0px;
     padding: 0px;
@@ -371,11 +364,12 @@ nav .dropdown:hover .dropdown-menu {
 .accordion ul:hover li:hover #hide {
     transition: all 0.3s ease-out;
     overflow: hidden;
-    white-space: inherit;
     position: absolute;
-    top: 120px;
+    top: 20px;
     z-index: 9999999;
     font-size: 32px;
+    white-space: nowrap;
+
     text-decoration: underline;
     font-weight: 400;
     background: rgba(0, 0, 0, 0);
