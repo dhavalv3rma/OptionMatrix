@@ -57,7 +57,7 @@ nav .dropdown-menu {
 nav .dropdown-item:hover,
 nav .dropdown-item:active {
     color: #ffffff !important;
-    background: #2f2f2f;
+    background: #23374d;
 }
 
 nav .dropdown:hover .dropdown-menu {
