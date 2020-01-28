@@ -368,7 +368,7 @@ nav .dropdown:hover .dropdown-menu {
     top: 20px;
     z-index: 9999999;
     font-size: 32px;
-    white-space: nowrap;
+        white-space: nowrap;
 
     text-decoration: underline;
     font-weight: 400;
