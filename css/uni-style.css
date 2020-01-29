@@ -244,12 +244,6 @@ nav .dropdown:hover .dropdown-menu {
     min-width: 220px;
     top: 0px;
     background: #23374d;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c2c2c, #23374d);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #343434, #23374d);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .pos-card .card-body {
@@ -280,6 +274,12 @@ nav .dropdown:hover .dropdown-menu {
     min-height: 280px;
     width: 100%;
 }
+
+/*infrastructure-page*/
+#minicons img {
+    height: 60px;
+}
+
 
 
 /*///////////////////////////FOOTER///////////////////////////*/
