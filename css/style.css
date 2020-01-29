@@ -364,8 +364,7 @@ nav .dropdown:hover .dropdown-menu {
 
 .accordion ul:hover li:hover #hide {
     text-decoration: none !important;
-    transition: all 0.3s ease-out;
-    overflow: hidden;
+    transition: all 0.3s ease-out;    overflow: hidden;
     position: absolute;
     top: 20px;
     z-index: 9999999;
